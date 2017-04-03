@@ -20,7 +20,7 @@ foreach($primes as $prime) {
         $guessPosition = floor(($min + $max)/2);
         $guessNumber = $primes[$guessPosition];
     } else {
-        $max = $guessPosition -1;
+        $max = $guessPosition - 1;
         $guessPosition = floor(($min + $max)/2);
         $guessNumber = $primes[$guessPosition];
     }
