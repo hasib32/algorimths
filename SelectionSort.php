@@ -11,6 +11,7 @@ for($i = 0; $i < count($unsortedArray);) {
         if (isset($unsortedArray[$j+1]) ) {
             //find the minimum number
             if($min > $unsortedArray[$j+1]) {
+                // update minimum number
                 $min = $unsortedArray[$j+1];
                 $minIndexFoundAt = $j+1;//minimum number index
             }
@@ -20,6 +21,7 @@ for($i = 0; $i < count($unsortedArray);) {
     //swapping happening here
     $temp = $unsortedArray[$i];
     $unsortedArray[$i] = $min;
+    // swapping with minimum number
     $unsortedArray[$minIndexFoundAt] = $temp;
 
     $i++;
