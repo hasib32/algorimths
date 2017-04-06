@@ -8,6 +8,7 @@ $start = 0;
 while ($start < $end) {
     $temp = $name[$start];
 
+    // swapping character
     $name[$start] = $name[$end];
     $name[$end] = $temp;
 
