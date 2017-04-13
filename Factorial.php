@@ -29,7 +29,7 @@ function recursiveFactorial($number)
     if ($number >= 1) {
         $result = $number * recursiveFactorial($number - 1);
     }
-    
+
     return $result;
 }
 
