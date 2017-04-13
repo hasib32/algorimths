@@ -28,7 +28,8 @@ function isPalindrome($string)
     if ($string[0] !== $string[strlen($string) - 1]) {
         return false;
     } else {
-        $string = substr($string, 1, strlen($string) - 2);
+        // strip first and last letter from the string
+        $string = substr($string, 1, - 1);
 
         return isPalindrome($string);
     }
