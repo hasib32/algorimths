@@ -10,7 +10,7 @@
 
 $unsortedArray = [14, 33, 27, 10];
 
-for($i=0; $i < count($unsortedArray); $i++) {
+for ($i=0; $i < count($unsortedArray); $i++) {
     $minNumber = $unsortedArray[$i];
     $j = $i - 1;
     // This part is looping until j is greater than or equal 0 and current j is greater than min
