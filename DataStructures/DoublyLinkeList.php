@@ -98,10 +98,22 @@ class LinkList
 
         return $current;
     }
+
+    public function printList()
+    {
+        $currentList = $this->firstNode;
+
+        while($currentList->next != null) {
+            echo $currentList->data ."\n";
+            $currentList = $currentList->next;
+        }
+    }
 }
 
 $object = new LinkList();
 $object->insertFirst(4);
 $object->insertFirst(5);
-var_dump($object->find(5));
+$object->insertFirst(7);
+$object->printList();
+//var_dump($object->find(5));
 //var_dump($object->totalNodes());
